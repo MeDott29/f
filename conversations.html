@@ -1,0 +1,24 @@
+[]
+@stop
+
+@section('content')
+    <div class="row">
+        <div class{="small-12 columns">
+            <h2>{{ $league->name }}</h2>
+            <ul class="breadcrumbs">
+                <li><a href="{{ route('fantasy.league.index', [$league->slug, $season->slug]) }}">{{ $league->name }}</a></li>
+                <li><a href="{{ route('fantasy.season.index', [$league->slug, $season->slug]) }}">{{ $season->name }}</a></li>
+                <li>Divisions</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3>Manage Divisions</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="row">
